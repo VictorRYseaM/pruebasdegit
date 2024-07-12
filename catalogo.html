@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pagina Principal</title>
+    <link rel="stylesheet" href="estilos2.css">
+    <style>
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: grey;
+    font-family: 'open sans';
+}
+
+.contenedor{
+    width: 70%;
+    max-width:900px;
+    margin: auto;
+    height:80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tabla{
+    width: 23%;
+    height: 450px;
+    margin: auto;
+    border:1px solid #343759;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 0px  #343759;
+    padding: 50px;
+    text-align: center;
+    flex-grow: 1;
+    color: blue;
+    background-color:rgb(247, 249, 253);
+}
+
+.tabla>h2{
+    font-size:30px;
+    margin-bottom:35px;
+}
+
+.tabla img{
+    width: 64px;
+    margin-bottom:35px;
+}
+
+.tabla > h3{
+    font-size:30px;
+    margin-bottom: 20px;
+}
+
+.tabla > p{
+    display: block;
+    margin-bottom:20px;
+}
+
+.boton{
+    display:inline-block;
+    width: 150px;
+    padding:12px;
+    background: #DDA0DD;
+    text-decoration: none;
+    color: blue;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin: auto;
+}
+
+.tabla:hover{
+    background: blue;
+    color:#fff ;
+    transition: .5s all;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px){
+    .tabla{
+        width: 45%;
+        max-width:none;
+        margin-bottom: 40px;
+        flex-grow: initial;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .tabla{
+        width: 45%;
+        padding:30px;
+    }
+    .tabla > h2{
+        margin-top:40px;
+    }
+}
+
+@media screen and (max-width:550px){
+    .tabla{
+        width: 85%;
+        padding: 20px;
+    }
+}
+
+        
+    </style>
+</head>
+<body>
+<center>
+    <h2  class="titu">Vive Bonitas y Hermosas experiencias 
+    </h2>
+</center>
+    <div class="contenedor">
+        <div class="tabla">
+            
+            <h2>Isla de Margarita</h2>
+            <img src="png/1.png" alt="">
+            <h3>200 <sup>$</sup></h3>
+            <p>Disfruta de las hermosas playas de margarita</p>
+            <a href="" class="boton">Paga ahora</a>
+        </div>
+        <div class="tabla hover">
+            <h2>Medanos de coro</h2>
+            <img src="png/2.png" alt="">
+            <h3>100 <sup>$</sup></h3>
+            <p>Disfruta de los medanos de coro</p>
+            <a href="" class="boton">Paga ahora</a>
+        </div>
+        <div class="tabla">
+            <h2>Merida</h2>
+            <img src="png/3.png" alt="">
+            <h3>300 <sup>$</sup></h3>
+            <p>Disfruta de un hermoso paisaje</p>
+            <a href="" class="boton">Paga ahora</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+/* Tipografía */
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: #333;
+}
+
+.formulario h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.grupo-inputs h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Colores */
+body {
+    background-color: #fff;
+}
+
+.formulario {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.formulario h1 {
+    color: #222;
+    text-align: center;
+}
+
+.grupo-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.grupo-inputs input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.grupo-fechas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.grupo-fechas label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.grupo-habitaciones {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.grupo-habitaciones p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.grupo-habitaciones-adultos,
+.grupo-habitaciones-ninos {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.formulario input[type="submit"] {
+    background-color: #DDA0DD;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .formulario {
+        width: 90%;
+    }
+    
+    .grupo-inputs {
+        flex-direction: column;
+    }
+}
+
+/* Animaciones */
+.formulario input[type="submit"]:hover {
+    background-color: #0073b7;
+}
